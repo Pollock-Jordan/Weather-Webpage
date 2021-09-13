@@ -1,0 +1,174 @@
+/*
+   sunset.jpg
+   Wbsite name: wallpaperflare.com
+   URL:https://www.wallpaperflare.com/beautiful-sunset-over-the-oceanside-california-cloudless-evening-wallpaper-wktol
+   Date accessed: Dec. 7, 2020
+*/
+body {
+    width: 80%;
+    margin: 0 auto;
+    background-image: url("../img/sunset.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: grid;
+    grid-template-rows: 0.2fr 0.5fr 7fr 0.5fr 0.2fr;
+    grid-row-gap: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*
+   sunsetSmall.jpg
+   Wbsite name: wallpaperflare.com
+   URL:https://www.wallpaperflare.com/beautiful-sunset-over-the-oceanside-california-cloudless-evening-wallpaper-wktol
+   Date accessed: Dec. 7, 2020
+*/
+header {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("../img/sunsetSmall.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-Color: rgb(255,210,150);
+    color: black;
+    grid-row: 2/span 1;
+    min-height: 100px;
+}
+
+main {
+    background-Color: whitesmoke;
+    grid-row: 3/span 1;
+    padding-left: 20px;
+    padding-right: 20px;
+    min-width: 850px;
+}
+
+/* This content formats the button and search bar above table*/
+#search {
+    width: 50%;
+    min-width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+    font-weight: bold;
+}
+
+#tableDiv {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#weatherTable {
+    text-align: center;
+}
+
+/*
+    Referenced to see how to adjust table lines
+	Website name: w3schools.com
+	URL: https://www.w3schools.com/css/css_table.asp
+	Date accessed: Dec. 7, 2020
+*/
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 2px;
+}
+
+
+th {
+    font-size: 15pt;
+    padding: 6px;
+    background-color: lightgray;
+}
+
+/*The color of the background of the table is white, instead of whitesmoke, to 
+  make it stand out just slightly on the web page, but in a really subtle way
+*/
+td {
+    font-size: 12pt;
+    background-color: white;
+}
+
+/*
+   sunsetSmall.jpg
+   Wbsite name: wallpaperflare.com
+   URL:https://www.wallpaperflare.com/beautiful-sunset-over-the-oceanside-california-cloudless-evening-wallpaper-wktol
+   Date accessed: Dec. 7, 2020
+*/
+button {
+    background-image: url("../img/sunsetSmall.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-weight: bold;
+}
+
+/*
+   sunsetSmallest.jpg
+   Wbsite name: wallpaperflare.com
+   URL:https://www.wallpaperflare.com/beautiful-sunset-over-the-oceanside-california-cloudless-evening-wallpaper-wktol
+   Date accessed: Dec. 7, 2020
+*/
+footer {
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    grid-row: 4/span 1;
+    background-image: url("../img/sunsetSmallest.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+/*Break point! when the veiw port shrinks past 840px switch to mobile veiw*/
+@media screen and (max-width: 840px) {
+    main {
+        width: 80vw;
+        min-width: 570px;
+    }
+
+    th {
+        font-size: 11pt;
+        padding: 2px;
+    }
+
+    td {
+        font-size: 9pt;
+    }
+
+    /*The indicatior title that tells the user they can filter data by city name will be centered*/
+    h2 {
+        text-align: center;
+    }
+
+    /*The instructions in the main content will be centred now*/
+    #instr {
+        text-align: center;
+    }
+
+    form {
+        padding: 10px;
+    }
+
+    /*The search bar and button will apear in a grey box in mobile view*/
+    #search {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+        font-weight: bold;
+        background-color: lightgrey;
+        width: 93%;
+    }
+
+    button {
+        width: 40%;
+        padding: 10px;
+    }
+   
+}

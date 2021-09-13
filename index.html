@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width,initial-scale-1">
+    <!--
+        CSS Reset: normalize.css
+        author: Nicolas Gallagher
+        URL: https://necolas.github.io/normalize.css/
+        Date accessed: November 5/2020
+        -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <title>Weather Data</title>
+</head>
+<body>
+    <!--Top of webpage veiw-->
+    <header>
+        <h1>Weather Data</h1>
+    </header>
+
+    <!--main content-->
+    <main id="mainContent">
+        <h2>Filter Data By City Name</h2>
+        <div id="instr">
+            <p>Type in the name of a city you would like to see weather statistics for. You can type in just the first letter(s) of the city name to see all weather data for cities with names that start with the same letter(s). The letters you enter are case sensitive, and you must click the "Filter Results" button to filter. If the data displayed does not change, there are no city names that start with the letter(s) you entered.</p>
+        </div>
+        <div id="search">
+            <form>
+                <label for="filtBy">City Name:</label>
+                <input type="text" name="filtBy" id="filtBy">
+            </form>
+            <button type="button" id="filter">Filter Results</button>
+        </div>
+        <div id="tableDiv">
+            <!-- This is where the JS code will add the weather data table generated-->
+        </div>
+    </main>
+
+    <!--bottom of webpage veiw-->
+    <footer>
+        <p>&#169;Weather Data</p>
+    </footer>
+    <script src="js/data-weather.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html> 
