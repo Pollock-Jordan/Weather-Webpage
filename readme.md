@@ -6,7 +6,7 @@
 ### Student Details
 - Name: Sarah Pollock-Jordan
 - Banner ID (B00#): B00801381
-- Email: sr567112@dal.ca
+- Email: s.pollock-jordan@dal.ca
 
 
 ### JSON data chosen
